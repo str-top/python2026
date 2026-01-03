@@ -6,7 +6,18 @@ on:
 
 jobs:
   call-central-runner:
-    uses: Pau1R/python2026/.github/workflows/test_runner.yml@main
-    secrets:
-      TEACHER_PAT: ${{ secrets.TASKS_REPO_TOKEN }}
-      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      discussions: read
+
+    steps:
+      - name: Call centralized test runner
+        uses: Pau1R/python2026/.github/workflows/test_runner.yml@main
+        with:
+          discussion_node_id: ${{ github.event.discussion.node_id }}
+          comment_author: ${{ github.event.comment.user.login }}
+          comment_body: ${{ github.event.comment.body }}
+        secrets:
+          TEACHER_PAT: ${{ secrets.TASKS_REPO_TOKEN }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
