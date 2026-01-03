@@ -4,6 +4,10 @@ on:
   discussion:
     types: [edited]
 
+permissions:
+  contents: write
+  discussions: write
+
 jobs:
   call-central-runner:
     uses: Pau1R/python2026/.github/workflows/test_runner.yml@main
