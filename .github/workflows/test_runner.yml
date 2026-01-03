@@ -6,17 +6,7 @@ on:
 
 jobs:
   call-central-runner:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      discussions: read
-
-    steps:
-      - name: Checkout student repo
-        uses: actions/checkout@v4
-
-      - name: Call centralized test runner
-        uses: Pau1R/python2026_tasks/.github/workflows/test_runner.yml@main
-        secrets:
-          TEACHER_PAT: ${{ secrets.TEACHER_PAT }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+    uses: Pau1R/python2026_tasks/.github/workflows/test_runner.yml@main
+    secrets:
+      TEACHER_PAT: ${{ secrets.TEACHER_PAT }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
