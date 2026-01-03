@@ -1,8 +1,8 @@
 name: Test Runner (Student Starter)
 
 on:
-  discussion_comment:
-    types: [created, edited]
+  discussion:
+    types: [edited]
 
 jobs:
   call-central-runner:
