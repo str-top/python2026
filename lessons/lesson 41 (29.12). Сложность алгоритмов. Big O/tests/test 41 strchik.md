@@ -1,4 +1,4 @@
-[Ссылка на тест](https://github.com/str-top/python2026/discussions/6)
+[Ссылка на тест](https://github.com/str-top/python2026/discussions/7)
 
 <!--
 test_number: 41
@@ -6,10 +6,10 @@ lesson_number: 41
 lesson_folder: lesson 41 (29.12). Сложность алгоритмов. Big O
 student_short: strchik
 student_github: str-top
-discussion_node_id: D_kwDOQy86y84Ajfgi
-discussion_number: 6
-discussion_url: https://github.com/str-top/python2026/discussions/6
+discussion_node_id: D_kwDOQy86y84Ajfgo
+discussion_number: 7
+discussion_url: https://github.com/str-top/python2026/discussions/7
 teacher_marker_login: Pau1R
-tracker_discussion_id: D_kwDOQaQBts4Ajfgh
-tracker_comment_id: DC_kwDOQaQBts4A6vFx
+tracker_discussion_id: D_kwDOQaQBts4Ajfgn
+tracker_comment_id: DC_kwDOQaQBts4A6vF5
 -->
