@@ -6,7 +6,7 @@ on:
 
 jobs:
   call-central-runner:
-    uses: Pau1R/python2026_tasks/.github/workflows/test_runner.yml@main
+    uses: Pau1R/python2026/.github/workflows/test_runner.yml@main
     secrets:
-      TEACHER_PAT: ${{ secrets.TEACHER_PAT }}
+      TEACHER_PAT: ${{ secrets.TASKS_REPO_TOKEN }}
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
