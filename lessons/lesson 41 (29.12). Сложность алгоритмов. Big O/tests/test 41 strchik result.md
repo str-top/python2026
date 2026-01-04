@@ -3,26 +3,6 @@
 Test 41 result for strchik
 
 ---
-Какой из следующих кодов наиболее эффективно создаёт словарь из списка кортежей, где первый элемент - ключ, второй - значение?
-
-```python
-pairs = [('a', 1), ('b', 2), ('c', 3)]
-
-# Вариант А
-dict_a = {}
-for k, v in pairs:
-    dict_a[k] = v
-
-# Вариант Б
-dict_b = dict(pairs)
-
-# Вариант В
-dict_c = {k: v for k, v in pairs}
-```
-
-Какова временная сложность каждого варианта?
-Selected: [1] | Points: 0.0 | Correct: False
----
 Рассмотрим следующий код для работы с большими данными:
 
 ```python
@@ -54,4 +34,24 @@ result = process_large_dataset(data)
 ```
 
 Какова общая временная сложность алгоритма и сколько памяти он потребляет?
-Selected: [1] | Points: 0.0 | Correct: False
+Selected: [5] | Points: 0.0 | Correct: False
+---
+Какой из следующих кодов наиболее эффективно создаёт словарь из списка кортежей, где первый элемент - ключ, второй - значение?
+
+```python
+pairs = [('a', 1), ('b', 2), ('c', 3)]
+
+# Вариант А
+dict_a = {}
+for k, v in pairs:
+    dict_a[k] = v
+
+# Вариант Б
+dict_b = dict(pairs)
+
+# Вариант В
+dict_c = {k: v for k, v in pairs}
+```
+
+Какова временная сложность каждого варианта?
+Selected: [4] | Points: 0.0 | Correct: False
