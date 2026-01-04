@@ -1,4 +1,4 @@
-10%
+0%
 
 Test 41 result for strchik
 
@@ -21,7 +21,7 @@ dict_c = {k: v for k, v in pairs}
 ```
 
 Какова временная сложность каждого варианта?
-Selected: [4] | Points: 0.0 | Correct: False
+Selected: [1] | Points: 0.0 | Correct: False
 ---
 Рассмотрим следующий код для работы с большими данными:
 
@@ -54,4 +54,4 @@ result = process_large_dataset(data)
 ```
 
 Какова общая временная сложность алгоритма и сколько памяти он потребляет?
-Selected: [6] | Points: 0.2 | Correct: False
+Selected: [1] | Points: 0.0 | Correct: False
