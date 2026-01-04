@@ -1,4 +1,4 @@
-0%
+10%
 
 Test 41 result for strchik
 
@@ -34,7 +34,7 @@ result = process_large_dataset(data)
 ```
 
 Какова общая временная сложность алгоритма и сколько памяти он потребляет?
-Selected: [5] | Points: 0.0 | Correct: False
+Selected: [4] | Points: 0.0 | Correct: False
 ---
 Какой из следующих кодов наиболее эффективно создаёт словарь из списка кортежей, где первый элемент - ключ, второй - значение?
 
@@ -54,4 +54,4 @@ dict_c = {k: v for k, v in pairs}
 ```
 
 Какова временная сложность каждого варианта?
-Selected: [4] | Points: 0.0 | Correct: False
+Selected: [6] | Points: 0.2 | Correct: False
