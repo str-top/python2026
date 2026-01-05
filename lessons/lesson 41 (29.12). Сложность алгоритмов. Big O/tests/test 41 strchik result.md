@@ -1,59 +1,99 @@
-50%
+0%
 Test: 41 / lesson 41 (29.12). Сложность алгоритмов. Big O / 41
 Student: strchik (str-top)
 
 ---
-Какой из следующих кодов наиболее эффективно создаёт словарь из списка кортежей, где первый элемент - ключ, второй - значение?
+## Пространственная сложность
+
+Проанализируйте пространственную сложность следующего рекурсивного алгоритма вычисления факториала:
 
 ```python
-pairs = [('a', 1), ('b', 2), ('c', 3)]
-
-# Вариант А
-dict_a = {}
-for k, v in pairs:
-    dict_a[k] = v
-
-# Вариант Б
-dict_b = dict(pairs)
-
-# Вариант В
-dict_c = {k: v for k, v in pairs}
+def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)
 ```
 
-Какова временная сложность каждого варианта?
+Объясните, сколько памяти используется в стеке вызовов и как это зависит от n.
 
-Selected: [1] | Points: 1.0 | Correct: [1]
+Answer:
+Как-то так
 ---
-Рассмотрим следующий код для работы с большими данными:
+## Оптимизация циклов
+
+Дан код для поиска двух чисел с суммой target:
 
 ```python
-from collections import defaultdict
-import sys
-
-def process_large_dataset(data):
-    # Группировка данных по категориям
-    groups = defaultdict(list)
-    for category, value in data:
-        groups[category].append(value)
-    
-    # Вычисление статистики
-    stats = {}
-    for category, values in groups.items():
-        stats[category] = {
-            'count': len(values),
-            'sum': sum(values),
-            'avg': sum(values) / len(values),
-            'max': max(values),
-            'min': min(values)
-        }
-    
-    return stats
-
-# Данные: 1 миллион записей
-data = [(i % 100, i * 2) for i in range(1_000_000)]
-result = process_large_dataset(data)
+def find_two_sum(arr, target):
+    for i in range(len(arr)):
+        for j in range(i + 1, len(arr)):
+            if arr[i] + arr[j] == target:
+                return [arr[i], arr[j]]
+    return None
 ```
 
-Какова общая временная сложность алгоритма и сколько памяти он потребляет?
+Какова временная сложность и как её можно улучшить?
 
-Selected: [2] | Points: 0.0 | Correct: [3]
+Selected: [3] | Points: 0.0 | Correct: [0]
+---
+## Практический анализ
+
+Имеется функция для проверки, является ли строка палиндромом:
+
+```python
+def is_palindrome(s):
+    # Удаляем все не-буквенные символы и приводим к нижнему регистру
+    cleaned = ''.join(c.lower() for c in s if c.isalnum())
+    # Сравниваем с обратной строкой
+    return cleaned == cleaned[::-1]
+```
+
+Проанализируйте:
+1. Временную сложность по времени
+2. Пространственную сложность
+3. Можно ли оптимизировать этот алгоритм по памяти?
+4. Предложите оптимизированную версию
+
+Answer:
+asdfadf
+---
+## Анализ временной сложности
+
+Проанализируйте временную сложность следующего алгоритма:
+
+```python
+def find_duplicates(arr):
+    seen = set()
+    duplicates = set()
+    for item in arr:
+        if item in seen:
+            duplicates.add(item)
+        else:
+            seen.add(item)
+    return list(duplicates)
+```
+
+Объясните по шагам, почему сложность именно такая, и предложите оптимизацию, если это возможно.
+
+Answer:
+qewrasf
+---
+## Временная сложность операций
+
+Какова временная сложность поиска элемента в следующих структурах данных?
+
+```python
+# 1. Поиск в списке (list)
+my_list = [1, 2, 3, 4, 5]
+x = 3 in my_list
+
+# 2. Поиск в множестве (set)
+my_set = {1, 2, 3, 4, 5}
+x = 3 in my_set
+
+# 3. Поиск по ключу в словаре (dict)
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+x = my_dict['b']
+```
+
+Selected: [3] | Points: 0.0 | Correct: [0]
