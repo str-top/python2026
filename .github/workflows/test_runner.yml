@@ -13,5 +13,5 @@ jobs:
     uses: Pau1R/python2026/.github/workflows/test_runner.yml@main
     secrets:
       TEACHER_PAT: ${{ secrets.TASKS_REPO_TOKEN }}
-      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       TASKS_REPO_CLASSIC_TOKEN: ${{ secrets.TASKS_REPO_CLASSIC_TOKEN }}
